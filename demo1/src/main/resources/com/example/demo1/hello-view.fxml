@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootScene" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-600.0" minWidth="-600.0" prefHeight="479.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.HelloController">
+
+  <children>
+    <ImageView fitHeight="479.0" fitWidth="713.0">
+      <image>
+        <Image url="@../../../assets/imgs/fondo (2).jpg" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="Personaje" fitHeight="80.0" fitWidth="70.0" layoutX="319.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../assets/imgs/pou.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="Iniciar" layoutX="61.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#btnIniciarOnMouse" text="Iniciar" />
+    <Button fx:id="Izquierda" layoutX="290.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#btnIzquierdaOnMouse" text="Izquierda" />
+    <Button fx:id="Derecha" layoutX="357.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#btnDerechaOnMouse" text="Derecha" />
+    <Button fx:id="Salir" layoutX="561.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouse" text="Salir" />
+  </children>
+</AnchorPane>
